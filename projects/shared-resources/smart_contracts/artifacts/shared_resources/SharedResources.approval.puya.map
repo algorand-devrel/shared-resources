@@ -1,0 +1,2192 @@
+{
+  "version": 3,
+  "sources": [
+    "../../shared_resources/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAGA;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;AAAA;AAAA;AAIK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAUA;;AAAA;AAAA;AAAA;;AAAA;AAdL;;;AAcK;;;AAAA;AAAA;AAOA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAIA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAzBL;;AAAA;;;;;;;;;AAAA;AAAA;AAIA;;;AAEmB;AAAJ;AAAA;;AAAA;AAAP;AACA;AAAA;;AAAA;AAAoB;;;;AAApB;AAEc;;;AAAd;AAAA;;;AACS;AAAA;;AAAO;AAAP;AAAjB;;;AACsB;AAAoC;;;AAAb;;;;AAAvB;;;;AAAA;;;AAAA;;;AACV;AAAA;AAAA;AAAA;;;AAAyB;AAAA;AAAzB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAFK;;AAAA;AAAA;AAAA;;;;;;AAIjB;;;;;;;;AAEsB;;;AAAd;AAAA;;;AACR;;AAAA;AAAA;;AAAA;;AAAA;;AAAA;AAAA;;;AAAA;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAY;;AACgB;AAAA;AAAA;AAAA;AAAA;;AAAA;;AAAA;AAA5B;AAAA;AAAA;;;;;AAAA;;AAAA;;AAAA;AAAA;;;AAAA;;AAAA;;;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AACsB;AAAN;;AAAA;AAAA;;AAAA;;AAAA;;;;;;;;;;;;;;;;;;AAMhB;;;AAEe;AAAA;AAAA;AAAP;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.shared_resources.contract.SharedResources.approval_program",
+      "params": {},
+      "block": "smart_contracts.shared_resources.contract.SharedResources.approval_program",
+      "stack_in": [],
+      "op": "intcblock 0 1 32 8"
+    },
+    "7": {
+      "op": "bytecblock \"assets\" 0x068101"
+    },
+    "20": {
+      "callsub": "smart_contracts.shared_resources.contract.SharedResources.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "23": {
+      "op": "return",
+      "stack_out": []
+    },
+    "24": {
+      "subroutine": "smart_contracts.shared_resources.contract.SharedResources.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "27": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "29": {
+      "op": "bz __puya_arc4_router___bare_routing@8",
+      "stack_out": []
+    },
+    "32": {
+      "op": "pushbytess 0xbec76d87 0x9a4c5a30 0xc47e8a93 0x3c7daa97 // method \"bootstrap()void\", method \"access_balance(address[])void\", method \"share_resource()void\", method \"get_assets()uint64[]\""
+    },
+    "54": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(access_balance(address[])void)",
+        "Method(bootstrap()void)",
+        "Method(get_assets()uint64[])",
+        "Method(share_resource()void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(bootstrap()void)",
+        "Method(access_balance(address[])void)",
+        "Method(share_resource()void)",
+        "Method(get_assets()uint64[])",
+        "tmp%2#0"
+      ]
+    },
+    "57": {
+      "op": "match __puya_arc4_router___bootstrap_route@2 __puya_arc4_router___access_balance_route@3 __puya_arc4_router___share_resource_route@4 __puya_arc4_router___get_assets_route@5",
+      "stack_out": []
+    },
+    "67": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "68": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "69": {
+      "block": "__puya_arc4_router___bootstrap_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "71": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "72": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "73": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "75": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "76": {
+      "callsub": "smart_contracts.shared_resources.contract.SharedResources.bootstrap",
+      "op": "callsub bootstrap"
+    },
+    "79": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "80": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "81": {
+      "block": "__puya_arc4_router___access_balance_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "83": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "84": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "85": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "87": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "88": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "91": {
+      "callsub": "smart_contracts.shared_resources.contract.SharedResources.access_balance",
+      "op": "callsub access_balance",
+      "stack_out": []
+    },
+    "94": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "95": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "96": {
+      "block": "__puya_arc4_router___share_resource_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "98": {
+      "op": "!",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "99": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "100": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "102": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "103": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "104": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "105": {
+      "block": "__puya_arc4_router___get_assets_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "107": {
+      "op": "!",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "108": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "109": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "111": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "112": {
+      "callsub": "smart_contracts.shared_resources.contract.SharedResources.get_assets",
+      "op": "callsub get_assets",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "115": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0",
+        "0x151f7c75"
+      ]
+    },
+    "121": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "tmp%20#0"
+      ]
+    },
+    "122": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "123": {
+      "op": "log",
+      "stack_out": []
+    },
+    "124": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "125": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "126": {
+      "block": "__puya_arc4_router___bare_routing@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "128": {
+      "op": "bnz __puya_arc4_router___after_if_else@12",
+      "stack_out": []
+    },
+    "131": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "133": {
+      "op": "!",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "134": {
+      "op": "assert // is creating",
+      "stack_out": []
+    },
+    "135": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "136": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "137": {
+      "block": "__puya_arc4_router___after_if_else@12",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "138": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "139": {
+      "subroutine": "smart_contracts.shared_resources.contract.SharedResources.bootstrap",
+      "params": {},
+      "block": "bootstrap",
+      "stack_in": [],
+      "op": "proto 0 0"
+    },
+    "142": {
+      "op": "bytec_0 // \"assets\"",
+      "defined_out": [
+        "\"assets\""
+      ],
+      "stack_out": [
+        "\"assets\""
+      ]
+    },
+    "143": {
+      "op": "box_len",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "144": {
+      "op": "bury 1",
+      "stack_out": [
+        "maybe_exists%0#0"
+      ]
+    },
+    "146": {
+      "op": "!",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "147": {
+      "op": "assert // App was already bootstrapped",
+      "stack_out": []
+    },
+    "148": {
+      "op": "bytec_0 // \"assets\"",
+      "stack_out": [
+        "\"assets\""
+      ]
+    },
+    "149": {
+      "op": "box_del",
+      "defined_out": [
+        "{box_del}"
+      ],
+      "stack_out": [
+        "{box_del}"
+      ]
+    },
+    "150": {
+      "op": "pop",
+      "stack_out": []
+    },
+    "151": {
+      "op": "bytec_0 // \"assets\"",
+      "stack_out": [
+        "\"assets\""
+      ]
+    },
+    "152": {
+      "op": "pushbytes 0x0000",
+      "defined_out": [
+        "\"assets\"",
+        "0x0000"
+      ],
+      "stack_out": [
+        "\"assets\"",
+        "0x0000"
+      ]
+    },
+    "156": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "157": {
+      "op": "pushint 3500 // 3500",
+      "defined_out": [
+        "3500"
+      ],
+      "stack_out": [
+        "3500"
+      ]
+    },
+    "160": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "3500"
+      ],
+      "stack_out": [
+        "3500",
+        "0"
+      ]
+    },
+    "161": {
+      "callsub": "_puya_lib.util.ensure_budget",
+      "op": "callsub ensure_budget",
+      "stack_out": []
+    },
+    "164": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "165": {
+      "block": "bootstrap_for_header@1",
+      "stack_in": [
+        "i#0"
+      ],
+      "op": "frame_dig 0",
+      "defined_out": [
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "i#0"
+      ]
+    },
+    "167": {
+      "op": "intc_2 // 32",
+      "defined_out": [
+        "32",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "i#0",
+        "32"
+      ]
+    },
+    "168": {
+      "op": "<",
+      "defined_out": [
+        "continue_looping%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "continue_looping%0#0"
+      ]
+    },
+    "169": {
+      "op": "bz bootstrap_after_for@5",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "172": {
+      "op": "itxn_begin"
+    },
+    "173": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "0"
+      ]
+    },
+    "174": {
+      "op": "itxn_field ConfigAssetDecimals",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "176": {
+      "op": "pushint 10 // 10",
+      "defined_out": [
+        "10",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "10"
+      ]
+    },
+    "178": {
+      "op": "itxn_field ConfigAssetTotal",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "180": {
+      "op": "pushint 3 // acfg",
+      "defined_out": [
+        "acfg",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "acfg"
+      ]
+    },
+    "182": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "184": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "i#0",
+        "0"
+      ]
+    },
+    "185": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "187": {
+      "op": "itxn_submit"
+    },
+    "188": {
+      "op": "itxn CreatedAssetID",
+      "defined_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0"
+      ]
+    },
+    "190": {
+      "op": "bytec_0 // \"assets\"",
+      "defined_out": [
+        "\"assets\"",
+        "i#0",
+        "new_asa.CreatedAssetID#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0",
+        "\"assets\""
+      ]
+    },
+    "191": {
+      "op": "box_get",
+      "defined_out": [
+        "i#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "new_asa.CreatedAssetID#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "192": {
+      "op": "assert // check self.assets exists",
+      "stack_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "193": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "expr_value_trimmed%0#0",
+        "i#0",
+        "new_asa.CreatedAssetID#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "new_asa.CreatedAssetID#0",
+        "expr_value_trimmed%0#0"
+      ]
+    },
+    "196": {
+      "op": "swap",
+      "stack_out": [
+        "i#0",
+        "expr_value_trimmed%0#0",
+        "new_asa.CreatedAssetID#0"
+      ]
+    },
+    "197": {
+      "op": "itob",
+      "defined_out": [
+        "expr_value_trimmed%0#0",
+        "i#0",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "expr_value_trimmed%0#0",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "198": {
+      "op": "concat",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0"
+      ]
+    },
+    "199": {
+      "op": "dup",
+      "defined_out": [
+        "concatenated%0#0",
+        "concatenated%0#0 (copy)",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "concatenated%0#0 (copy)"
+      ]
+    },
+    "200": {
+      "op": "len",
+      "defined_out": [
+        "byte_len%0#0",
+        "concatenated%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "byte_len%0#0"
+      ]
+    },
+    "201": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "byte_len%0#0",
+        "concatenated%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "byte_len%0#0",
+        "8"
+      ]
+    },
+    "202": {
+      "op": "/",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0",
+        "len_%0#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "len_%0#0"
+      ]
+    },
+    "203": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "concatenated%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "204": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "concatenated%0#0",
+        "i#0",
+        "len_16_bit%0#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concatenated%0#0",
+        "len_16_bit%0#0"
+      ]
+    },
+    "207": {
+      "op": "swap",
+      "stack_out": [
+        "i#0",
+        "len_16_bit%0#0",
+        "concatenated%0#0"
+      ]
+    },
+    "208": {
+      "op": "concat",
+      "defined_out": [
+        "concat_result%0#0",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "concat_result%0#0"
+      ]
+    },
+    "209": {
+      "op": "bytec_0 // \"assets\"",
+      "stack_out": [
+        "i#0",
+        "concat_result%0#0",
+        "\"assets\""
+      ]
+    },
+    "210": {
+      "op": "box_del",
+      "defined_out": [
+        "concat_result%0#0",
+        "i#0",
+        "{box_del}"
+      ],
+      "stack_out": [
+        "i#0",
+        "concat_result%0#0",
+        "{box_del}"
+      ]
+    },
+    "211": {
+      "op": "pop",
+      "stack_out": [
+        "i#0",
+        "concat_result%0#0"
+      ]
+    },
+    "212": {
+      "op": "bytec_0 // \"assets\"",
+      "stack_out": [
+        "i#0",
+        "concat_result%0#0",
+        "\"assets\""
+      ]
+    },
+    "213": {
+      "op": "swap",
+      "stack_out": [
+        "i#0",
+        "\"assets\"",
+        "concat_result%0#0"
+      ]
+    },
+    "214": {
+      "op": "box_put",
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "215": {
+      "op": "frame_dig 0",
+      "stack_out": [
+        "i#0",
+        "i#0"
+      ]
+    },
+    "217": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0",
+        "i#0",
+        "1"
+      ]
+    },
+    "218": {
+      "op": "+",
+      "stack_out": [
+        "i#0",
+        "i#0"
+      ]
+    },
+    "219": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "i#0"
+      ],
+      "stack_out": [
+        "i#0"
+      ]
+    },
+    "221": {
+      "op": "b bootstrap_for_header@1"
+    },
+    "224": {
+      "block": "bootstrap_after_for@5",
+      "stack_in": [
+        "i#0"
+      ],
+      "retsub": true,
+      "op": "retsub"
+    },
+    "225": {
+      "subroutine": "smart_contracts.shared_resources.contract.SharedResources.access_balance",
+      "params": {
+        "addrs#0": "bytes"
+      },
+      "block": "access_balance",
+      "stack_in": [],
+      "op": "proto 1 0"
+    },
+    "228": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "addr#0"
+      ]
+    },
+    "229": {
+      "op": "dup",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "230": {
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0"
+      ]
+    },
+    "232": {
+      "op": "dup",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "233": {
+      "op": "pushint 3500 // 3500",
+      "defined_out": [
+        "3500"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "3500"
+      ]
+    },
+    "236": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "3500"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "3500",
+        "0"
+      ]
+    },
+    "237": {
+      "callsub": "_puya_lib.util.ensure_budget",
+      "op": "callsub ensure_budget",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "240": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "addrs#0 (copy)"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "addrs#0 (copy)"
+      ]
+    },
+    "242": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "addrs#0 (copy)",
+        "0"
+      ]
+    },
+    "243": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "array_length%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0"
+      ]
+    },
+    "244": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "245": {
+      "block": "access_balance_for_header@1",
+      "stack_in": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "op": "frame_dig 5",
+      "defined_out": [
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "247": {
+      "op": "frame_dig 4",
+      "defined_out": [
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%0#0",
+        "array_length%0#0"
+      ]
+    },
+    "249": {
+      "op": "<",
+      "defined_out": [
+        "array_length%0#0",
+        "continue_looping%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "continue_looping%0#0"
+      ]
+    },
+    "250": {
+      "op": "bz access_balance_after_for@8",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "253": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "addrs#0 (copy)",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "addrs#0 (copy)"
+      ]
+    },
+    "255": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "array_head_and_tail%0#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%0#0"
+      ]
+    },
+    "258": {
+      "op": "frame_dig 5",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "260": {
+      "op": "intc_2 // 32",
+      "defined_out": [
+        "32",
+        "array_head_and_tail%0#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%0#0",
+        "item_index_internal%0#0",
+        "32"
+      ]
+    },
+    "261": {
+      "op": "*",
+      "defined_out": [
+        "array_head_and_tail%0#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_offset%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%0#0",
+        "item_offset%0#0"
+      ]
+    },
+    "262": {
+      "op": "intc_2 // 32",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%0#0",
+        "item_offset%0#0",
+        "32"
+      ]
+    },
+    "263": {
+      "op": "extract3 // on error: Index access is out of bounds",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "addr#0"
+      ]
+    },
+    "264": {
+      "op": "frame_bury 0",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "266": {
+      "op": "bytec_0 // \"assets\"",
+      "defined_out": [
+        "\"assets\"",
+        "addr#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "\"assets\""
+      ]
+    },
+    "267": {
+      "op": "box_get",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "268": {
+      "op": "swap",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "269": {
+      "op": "dup",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "maybe_value%0#0 (copy)"
+      ]
+    },
+    "270": {
+      "op": "cover 2",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "272": {
+      "op": "frame_bury 1",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "274": {
+      "op": "assert // check self.assets exists",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "275": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0",
+        "0"
+      ]
+    },
+    "276": {
+      "op": "extract_uint16",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "array_length%1#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_length%1#0"
+      ]
+    },
+    "277": {
+      "op": "frame_bury 2",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "array_length%1#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "279": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "array_length%1#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "280": {
+      "op": "frame_bury 3",
+      "defined_out": [
+        "addr#0",
+        "array_length%0#0",
+        "array_length%1#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "282": {
+      "block": "access_balance_for_header@3",
+      "stack_in": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "op": "frame_dig 3",
+      "defined_out": [
+        "item_index_internal%1#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "284": {
+      "op": "frame_dig 2",
+      "defined_out": [
+        "array_length%1#0",
+        "item_index_internal%1#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "array_length%1#0"
+      ]
+    },
+    "286": {
+      "op": "<",
+      "defined_out": [
+        "array_length%1#0",
+        "continue_looping%1#0",
+        "item_index_internal%1#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "continue_looping%1#0"
+      ]
+    },
+    "287": {
+      "op": "bz access_balance_after_for@6",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "290": {
+      "op": "frame_dig 1",
+      "defined_out": [
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "292": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "array_head_and_tail%1#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%1#0"
+      ]
+    },
+    "295": {
+      "op": "frame_dig 3",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%1#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "297": {
+      "op": "dup",
+      "defined_out": [
+        "array_head_and_tail%1#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "item_index_internal%1#0 (copy)",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "array_head_and_tail%1#0",
+        "item_index_internal%1#0 (copy)",
+        "item_index_internal%1#0 (copy)"
+      ]
+    },
+    "298": {
+      "op": "cover 2",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "array_head_and_tail%1#0",
+        "item_index_internal%1#0 (copy)"
+      ]
+    },
+    "300": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "array_head_and_tail%1#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "item_index_internal%1#0 (copy)",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "array_head_and_tail%1#0",
+        "item_index_internal%1#0 (copy)",
+        "8"
+      ]
+    },
+    "301": {
+      "op": "*",
+      "defined_out": [
+        "array_head_and_tail%1#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "item_offset%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "array_head_and_tail%1#0",
+        "item_offset%1#0"
+      ]
+    },
+    "302": {
+      "op": "intc_3 // 8",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "array_head_and_tail%1#0",
+        "item_offset%1#0",
+        "8"
+      ]
+    },
+    "303": {
+      "op": "extract3 // on error: Index access is out of bounds",
+      "defined_out": [
+        "array_length%1#0",
+        "asset_id#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "asset_id#0"
+      ]
+    },
+    "304": {
+      "op": "btoi",
+      "defined_out": [
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "tmp%0#0"
+      ]
+    },
+    "305": {
+      "op": "frame_dig 0",
+      "defined_out": [
+        "addr#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "tmp%0#0",
+        "addr#0"
+      ]
+    },
+    "307": {
+      "op": "swap",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "addr#0",
+        "tmp%0#0"
+      ]
+    },
+    "308": {
+      "op": "asset_holding_get AssetBalance",
+      "defined_out": [
+        "addr#0",
+        "array_length%1#0",
+        "check%0#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "310": {
+      "op": "bury 1",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "check%0#0"
+      ]
+    },
+    "312": {
+      "op": "assert // account opted into asset",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "313": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "addr#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0",
+        "1"
+      ]
+    },
+    "314": {
+      "op": "+",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%1#0"
+      ]
+    },
+    "315": {
+      "op": "frame_bury 3",
+      "defined_out": [
+        "addr#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "317": {
+      "op": "b access_balance_for_header@3"
+    },
+    "320": {
+      "block": "access_balance_after_for@6",
+      "stack_in": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "op": "frame_dig 5",
+      "defined_out": [
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "322": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%0#0",
+        "1"
+      ]
+    },
+    "323": {
+      "op": "+",
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "324": {
+      "op": "frame_bury 5",
+      "defined_out": [
+        "item_index_internal%0#0"
+      ],
+      "stack_out": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ]
+    },
+    "326": {
+      "op": "b access_balance_for_header@1"
+    },
+    "329": {
+      "block": "access_balance_after_for@8",
+      "stack_in": [
+        "addr#0",
+        "maybe_value%0#0",
+        "array_length%1#0",
+        "item_index_internal%1#0",
+        "array_length%0#0",
+        "item_index_internal%0#0"
+      ],
+      "retsub": true,
+      "op": "retsub"
+    },
+    "330": {
+      "subroutine": "smart_contracts.shared_resources.contract.SharedResources.get_assets",
+      "params": {},
+      "block": "get_assets",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "333": {
+      "op": "bytec_0 // \"assets\"",
+      "defined_out": [
+        "\"assets\""
+      ],
+      "stack_out": [
+        "\"assets\""
+      ]
+    },
+    "334": {
+      "op": "box_get",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "335": {
+      "op": "assert // check self.assets exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "336": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "337": {
+      "subroutine": "_puya_lib.util.ensure_budget",
+      "params": {
+        "required_budget#0": "uint64",
+        "fee_source#0": "uint64"
+      },
+      "block": "ensure_budget",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "340": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "required_budget#0 (copy)"
+      ],
+      "stack_out": [
+        "required_budget#0 (copy)"
+      ]
+    },
+    "342": {
+      "op": "pushint 10 // 10",
+      "defined_out": [
+        "10",
+        "required_budget#0 (copy)"
+      ],
+      "stack_out": [
+        "required_budget#0 (copy)",
+        "10"
+      ]
+    },
+    "344": {
+      "op": "+",
+      "defined_out": [
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "345": {
+      "block": "ensure_budget_while_top@1",
+      "stack_in": [
+        "required_budget_with_buffer#0"
+      ],
+      "op": "frame_dig 0"
+    },
+    "347": {
+      "op": "global OpcodeBudget",
+      "defined_out": [
+        "required_budget_with_buffer#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "required_budget_with_buffer#0",
+        "tmp%0#0"
+      ]
+    },
+    "349": {
+      "op": ">",
+      "defined_out": [
+        "required_budget_with_buffer#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "tmp%1#0"
+      ]
+    },
+    "350": {
+      "op": "bz ensure_budget_after_while@7",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "353": {
+      "op": "itxn_begin"
+    },
+    "354": {
+      "op": "pushint 6 // appl",
+      "defined_out": [
+        "appl",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "appl"
+      ]
+    },
+    "356": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "358": {
+      "op": "pushint 5 // DeleteApplication",
+      "defined_out": [
+        "DeleteApplication",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "DeleteApplication"
+      ]
+    },
+    "360": {
+      "op": "itxn_field OnCompletion",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "362": {
+      "op": "bytec_1 // 0x068101",
+      "defined_out": [
+        "0x068101",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "0x068101"
+      ]
+    },
+    "363": {
+      "op": "itxn_field ApprovalProgram",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "365": {
+      "op": "bytec_1 // 0x068101",
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "0x068101"
+      ]
+    },
+    "366": {
+      "op": "itxn_field ClearStateProgram",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "368": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "fee_source#0 (copy)",
+        "required_budget_with_buffer#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "fee_source#0 (copy)"
+      ]
+    },
+    "370": {
+      "op": "switch ensure_budget_switch_case_0@3 ensure_budget_switch_case_1@4",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "376": {
+      "op": "b ensure_budget_switch_case_next@6"
+    },
+    "379": {
+      "block": "ensure_budget_switch_case_0@3",
+      "stack_in": [
+        "required_budget_with_buffer#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "0"
+      ]
+    },
+    "380": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "382": {
+      "op": "b ensure_budget_switch_case_next@6"
+    },
+    "385": {
+      "block": "ensure_budget_switch_case_1@4",
+      "stack_in": [
+        "required_budget_with_buffer#0"
+      ],
+      "op": "global MinTxnFee",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "required_budget_with_buffer#0",
+        "tmp%2#0"
+      ]
+    },
+    "387": {
+      "op": "itxn_field Fee",
+      "stack_out": [
+        "required_budget_with_buffer#0"
+      ]
+    },
+    "389": {
+      "block": "ensure_budget_switch_case_next@6",
+      "stack_in": [
+        "required_budget_with_buffer#0"
+      ],
+      "op": "itxn_submit"
+    },
+    "390": {
+      "op": "b ensure_budget_while_top@1"
+    },
+    "393": {
+      "block": "ensure_budget_after_while@7",
+      "stack_in": [
+        "required_budget_with_buffer#0"
+      ],
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
