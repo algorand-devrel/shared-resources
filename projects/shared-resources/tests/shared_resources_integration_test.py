@@ -272,7 +272,7 @@ def test_fail_access_external_account_manual_population(
 ) -> None:
     """
     Fail case for accessing an ASA balance.
-    Both the ASA and the account appear at least once in the group.
+    Both the ASA and the account appear individually at least once in the group.
     Their individual properties are available.
 
     However, since they don't appear together in the first app call we expect the related ASA balance
