@@ -17,3 +17,9 @@ If only one account is passed, the app will make 32 balance accesses. If two acc
 
 Normally a resource is available to the entire group if it is references anywhere in the group.
 For account's ASA balances, both the account and the asset need to appear in the same transaction anywhere in the group.
+They are added by calling the same application on its (dummy) method share_resource`.
+
+# Using Lora
+Users are encouraged to use [Lora](https://lora.algokit.io/), its App Lab, and Transaction Wizard to manually construct an atomic group
+that replicates the examples.
+You can also use automatic resource population after adding empty app calls to the group and let it figure out which resources are needed.
