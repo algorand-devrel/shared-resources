@@ -61,6 +61,7 @@ def bootstrapped_shared_resources(
     """
     sp = shared_resources_client.algod_client.suggested_params()
     sp.flat_fee = True
+    # We need enough fees for: 1 method call, 32 asset config transactions, 5 inner app calls for opcode budget.
     sp.fee = 38 * MIN_TXN_FEE
     shared_resources_client.bootstrap(
         transaction_parameters=TransactionParameters(
@@ -107,12 +108,13 @@ def external_accounts(
 
 def test_pass_access_app_account_manual_population(
     bootstrapped_shared_resources: tuple[SharedResourcesClient, list[int]],
-    algod_client: AlgodClient,
 ) -> None:
     """
     Access the ASA balance of the app account for all ASAs.
-    Dummy ABI calls to the "share_resource" method are added to increase the total group resource count.
+
     Each app call can access at most 8 ASAs.
+    So the dummy ABI calls to the "share_resource" method are added to increase the total group resource limit.
+
     This gives the "access_balance" method access to all ASAs.
 
     By default, the sender's and the app's address are included as accessible foreign accounts.
@@ -195,10 +197,10 @@ def test_pass_access_multiple_external_account_manual_population(
     Access the ASA balance of multiple external accounts for all ASAs.
     All external accounts must be added explicitly as foreign accounts in each dummy "resource_share" ABI call.
 
-    Although the properties of an account and an ASA are available separately when added as a foreign resource,
-     the asset balance is not.
-    For the asset balance to be available in the entire group, the account and asset must appear
-     in the same app call.
+    Although the properties of an account and an ASA are available in the group separately
+     when added as a foreign resource, the asset balance is not.
+    For the asset balance to be available in the entire group, the account and asset must appear together
+     in at least one app call.
     """
     app_client, assets = bootstrapped_shared_resources
 

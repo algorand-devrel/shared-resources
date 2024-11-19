@@ -10,6 +10,10 @@ class SharedResources(ARC4Contract):
         assert not self.assets, "App was already bootstrapped"
         self.assets.value = arc4.DynamicArray[arc4.UInt64]()
 
+        # Creating 32 assets and adding their IDs to the array costs opcode budget.
+        # Each app call in the group gives 700 opcode budget.
+        # We need 5 extra app call in the group that are going to add opcode budget to this method call.
+        # AlgoPy provides this simple function call that will ensure enough opcode budget is available.
         ensure_budget(5 * 700)
         for i in urange(32):  # noqa: B007
             new_asa = itxn.AssetConfig(total=10, decimals=0).submit()

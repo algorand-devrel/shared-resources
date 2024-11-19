@@ -34,6 +34,6 @@ def deploy(
         algod_client,
         EnsureBalanceParameters(
             account_to_fund=app_client.app_address,
-            min_spending_balance_micro_algos=algos_to_microalgos(100),
+            min_spending_balance_micro_algos=algos_to_microalgos(100),  # type: ignore[misc,no-untyped-call]
         ),
     )
